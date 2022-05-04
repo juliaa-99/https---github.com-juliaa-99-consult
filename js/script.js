@@ -129,15 +129,15 @@ $(document).ready(function (){
 
     function initMasks() {
         $('input[name="phone-number"]').mask("+7 (000) 000-00-00");
-        $('input[name="kpp"]').mask("000000-000000000");
-        $('input[name="inn"]').mask("0000000-0000000000000000");
+        //$('input[name="kpp"]').mask("000000-000000000");
+        //$('input[name="inn"]').mask("0000000-0000000000000000");
     }
 
     function initListeners() {
         $(".phone-number").on("blur", validatePhone);
         $(".email").on("blur", validateEmail);
-        $(".kpp").on("blur", validateKpp);
-        $(".inn").on("blur", validateInn);
+        //$(".kpp").on("blur", validateKpp);
+        //$(".inn").on("blur", validateInn);
 
         $(".submitBtn").on("click", validateForm);
         $(".recallForm").on("click", recallFormValues);
@@ -161,7 +161,7 @@ $(document).ready(function (){
     }
 
 
-    function validateKpp() {
+    /*function validateKpp() {
         var isValid = false;
         var length = $(".kpp").val().length;
         if (length == 16) {
@@ -189,7 +189,7 @@ $(document).ready(function (){
         }
 
         return isValid;
-    }
+    }*/
 
     function validateEmail() {
         var emailAddress = $(".email").val().trim().toLowerCase();
@@ -239,7 +239,7 @@ $(document).ready(function (){
             $(".email").removeClass("invalid");
         }
 
-        if (!validateKpp()) {
+        /*if (!validateKpp()) {
             $(".kpp").addClass("invalid");
             formIsValid = false;
         } else {
@@ -251,7 +251,7 @@ $(document).ready(function (){
             formIsValid = false;
         } else {
             $(".inn").removeClass("invalid");
-        }
+        }*/
     }
 
     function recallFormValues(){
