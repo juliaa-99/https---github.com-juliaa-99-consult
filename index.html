@@ -500,7 +500,7 @@
 
 								<div class="form__cell wh-33 nn">
 									<label>КПП</label>
-									<input type="text" placeholder="КПП" name="kpp" class="kpp">
+									<input type="text" placeholder="КПП" name="kpp" id="kpp">
 									<span class="validation validateKpp">
 										<span class="kppValidationImg"></span>
     							</span>
@@ -508,7 +508,7 @@
 
 								<div class="form__cell wh-33 nn">
 									<label>ИНН</label>
-									<input type="text" placeholder="ИНН" name="inn" class="inn">
+									<input type="text" placeholder="ИНН" name="inn" id="inn">
 									<span class="validation validateInn">
 										<span class="innValidationImg"></span>
     							</span>
@@ -517,7 +517,7 @@
 
 								<div class="form__cell wh-30 nn2">
 									<label>Email</label>
-									<input type="text" placeholder="Email" name="email" class="email">
+									<input type="text" placeholder="Email" name="email" id="email">
 									<span class="validation validateEmail">
 										<span class="emailValidationImg"></span>
     							</span>
@@ -526,7 +526,7 @@
 
 								<div class="form__cell wh-30 nn2">
 									<label>Контактный номер телефона</label>
-									<input type="text" placeholder="+7 (---) --- - -- - --" name="phone-number" class="phone-number">
+									<input type="text" placeholder="+7 (---) --- - -- - --" name="phone-number" class="phone-number" id="phone">
 									<span class="validation validatePhone" >
 											<span class="phoneValidationImg"></span>
     							</span>
@@ -543,8 +543,11 @@
 
 							<div class="form__bottom">
 								<div class="check">
-									<input type="checkbox" id="ch1">
-									<label for="ch1">Согласен с <a href="#">политикой конфиденциальности</a> </label>
+									<input type="checkbox" id="check" required>
+									<label for="check">Согласен с <a href="#">политикой конфиденциальности</a> </label>
+									<span class="validation validateCheck" >
+											<span class="checkValidationImg"></span>
+    							</span>
 								</div>
 
 								<div class="form__in">
@@ -680,22 +683,25 @@
 									</div>
 									<div class="form__cell wh-50">
 										<label>Email</label>
-										<input type="text" placeholder="Email" name="email" class="email">
-										<span class="validation validateEmail">
-											<span class="emailValidationImg"></span>
+										<input type="text" placeholder="Email" name="email" id="email2">
+										<span class="validation validateEmail2">
+											<span class="emailValidationImg2"></span>
     								</span>
 									</div>
 								</div>
 
 								<div class="form__bottom">
 									<div class="check">
-										<input type="checkbox" id="ch5" checked>
-										<label for="ch5">Согласен с  <a href="#">политикой конфиденциальности</a> </label>
+										<input type="checkbox" id="check2" checked>
+										<label for="check2">Согласен с  <a href="#">политикой конфиденциальности</a> </label>
+										<span class="validation validateCheck2" >
+											<span class="checkValidationImg2"></span>
+    							</span>
 									</div>
 
 									<div class="form__in">
 										<div class="form__btns">
-											<button class="button button-primary submitBtn">Отправить <img src="images/svg/mp.svg" alt=""></button>
+											<button class="button button-primary submitBtn2" type="button">Отправить <img src="images/svg/mp.svg" alt=""></button>
 										</div>
 									</div>
 								</div>
@@ -802,17 +808,17 @@
 									</div>
 									<div class="form__cell wh-33">
 										<label>Номер телефона</label>
-										<input type="text" placeholder="+7 (---) --- - -- - --" name="phone-number" class="phone-number">
-										<span class="validation validatePhone" >
-											<span class="phoneValidationImg"></span>
+										<input type="text" placeholder="+7 (---) --- - -- - --" name="phone-number" class="phone-number" id="phone3">
+										<span class="validation validatePhone3" >
+											<span class="phoneValidationImg3"></span>
     								</span>
 									</div>
 
 									<div class="form__cell wh-40">
 										<label>Email</label>
-										<input type="text" placeholder="Email" name="email" class="email">
-										<span class="validation validateEmail">
-										<span class="emailValidationImg"></span>
+										<input type="text" placeholder="Email" name="email" id="email3">
+										<span class="validation validateEmail3">
+										<span class="emailValidationImg3"></span>
     							</span>
 									</div>
 									<div class="form__cell wh-60">
@@ -824,13 +830,17 @@
 
 								<div class="form__bottom">
 									<div class="check">
-										<input type="checkbox" id="ch2" checked>
-										<label for="ch2">Согласен с  <a href="#">политикой конфиденциальности</a> </label>
+										<input type="checkbox" id="check3" checked>
+										<label for="check3">Согласен с  <a href="#">политикой конфиденциальности</a> </label>
+
+										<span class="validation validateCheck3" >
+											<span class="checkValidationImg3"></span>
+    							</span>
 									</div>
 
 									<div class="form__in">
 										<div class="form__btns">
-											<button class="button button-primary submitBtn">Отправить <img src="images/svg/mp.svg" alt=""></button>
+											<button class="button button-primary submitBtn3" type="button">Отправить <img src="images/svg/mp.svg" alt=""></button>
 										</div>
 									</div>
 								</div>
@@ -913,16 +923,16 @@
 
 									<div class="form__cell wh-30">
 										<label>Email</label>
-										<input type="text" placeholder="Email" name="email" class="email">
-										<span class="validation validateEmail">
-										<span class="emailValidationImg"></span>
+										<input type="text" placeholder="Email" name="email" id="email4">
+										<span class="validation validateEmail4">
+										<span class="emailValidationImg4"></span>
     							</span>
 									</div>
 									<div class="form__cell wh-30">
 										<label>Номер телефона</label>
-										<input type="text" placeholder="+7 (---) --- - -- - --" name="phone-number" class="phone-number">
-										<span class="validation validatePhone" >
-											<span class="phoneValidationImg"></span>
+										<input type="text" placeholder="+7 (---) --- - -- - --" name="phone-number" class="phone-number" id="phone4">
+										<span class="validation validatePhone4" >
+											<span class="phoneValidationImg4"></span>
     								</span>
 									</div>
 									<div class="form__cell wh-10">
@@ -938,8 +948,12 @@
 
 								<div class="form__bottom">
 									<div class="check">
-										<input type="checkbox" id="ch3">
-										<label for="ch3">Согласен с <a href="#">политикой конфиденциальности</a> </label>
+										<input type="checkbox" id="check4">
+										<label for="check4">Согласен с <a href="#">политикой конфиденциальности</a> </label>
+
+										<span class="validation validateCheck4" >
+											<span class="checkValidationImg4"></span>
+    							</span>
 									</div>
 
 									<div class="form__in">
@@ -948,7 +962,7 @@
 											<div class="form__price-pr">250 000₽</div>
 										</div>
 										<div class="form__btns">
-											<button class="button button-primary submitBtn">Перейти к оплате <img src="images/svg/btn-icon.svg" alt=""></button>
+											<button class="button button-primary submitBtn4" type="button">Перейти к оплате <img src="images/svg/btn-icon.svg" alt=""></button>
 											<button class="button button-link">Запросить реквизиты <img src="images/svg/dw.svg" alt=""></button>
 										</div>
 									</div>
@@ -978,27 +992,47 @@
 									</div>
 									<div class="form__cell wh-50">
 										<label>Email</label>
-										<input type="text" placeholder="Email" name="email" class="email">
-										<span class="validation validateEmail">
-										<span class="emailValidationImg"></span>
+										<input type="text" placeholder="Email" name="email" id="email5">
+										<span class="validation validateEmail5">
+										<span class="emailValidationImg5"></span>
     							</span>
 									</div>
 								</div>
 
 								<div class="form__bottom">
 									<div class="check">
-										<input type="checkbox" id="ch8" checked>
-										<label for="ch8">Согласен с  <a href="#">политикой конфиденциальности</a> </label>
+										<input type="checkbox" id="check5" checked>
+										<label for="check5">Согласен с  <a href="#">политикой конфиденциальности</a> </label>
+										<span class="validation validateCheck5" >
+											<span class="checkValidationImg5"></span>
+    							</span>
 									</div>
 
 									<div class="form__in">
 										<div class="form__btns">
-											<button class="button button-primary submitBtn">Отправить <img src="images/svg/mp.svg" alt=""></button>
+											<button class="button button-primary submitBtn5" type="button">Отправить <img src="images/svg/mp.svg" alt=""></button>
 										</div>
 									</div>
 								</div>
 							</form>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade w-3" id="exampleModalOk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+
+
+					<div class="modal-body">
+						<div class="modal-title">
+							Заявка успешно отправлена
+						</div>
+						<div class="modal-tx">В ближайшее время наш менеджер свяжется вами.</div>
+						<a href="#" class="button button-primary" data-dismiss="modal" aria-label="Close">Отлично! <img src="images/svg/check.svg" alt=""></a>
+
 					</div>
 				</div>
 			</div>
