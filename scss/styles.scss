@@ -2285,7 +2285,7 @@ h2 {
 
   select {
     padding: 12px 24px;
-    width: 100%;
+    width: 100%!important;
     height: 53px;
     border: 1px solid $gray;
 
@@ -2999,11 +2999,16 @@ h2 {
   height: 250px;
   overflow: auto;
 }
+.select2-container--default {
+  width: 100%!important;
+
+}
 .select2-container--default .select2-selection--multiple {
   min-height: 53px;
   padding: 9px 20px;
 
   border: 1px solid $gray!important;
+  background: transparent!important;
 }
 
 .select2-dropdown {
@@ -3102,7 +3107,6 @@ h2 {
     border-radius: 4px;
   }
 }
-
 
 
 
